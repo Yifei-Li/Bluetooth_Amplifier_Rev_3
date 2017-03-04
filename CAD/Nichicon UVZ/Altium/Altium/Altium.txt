@@ -1,0 +1,63 @@
+# Created by Ultra Librarian Gold 8.1.201 Copyright © 1999-2016
+# Dequeue Server, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "U1-T")
+Pad (Name "1") (Location -197, 0) (HoleSize 34) (Rotation 0)
+PadShape (Size 54, 54) (Shape Rectangular) (Layer Top)
+PadShape (Size 54, 54) (Shape Rectangular) (Layer Bottom)
+EndPad
+Pad (Name "2") (Location 0, 0) (HoleSize 34) (Rotation 180)
+PadShape (Size 54, 54) (Shape Rounded) (Layer Top)
+PadShape (Size 54, 54) (Shape Rounded) (Layer Bottom)
+EndPad
+Line (Width 6) (Start -183.73529816, 207) (End -13.26470184, 207) (Layer Mechanical15) 
+Line (Width 6) (Start -13.26470184, 207) (End 108.5, 85.23529816) (Layer Mechanical15) 
+Line (Width 6) (Start 108.5, 85.23529816) (End 108.5, -85.23529816) (Layer Mechanical15) 
+Line (Width 6) (Start 108.5, -85.23529816) (End -13.26470184, -207) (Layer Mechanical15) 
+Line (Width 6) (Start -13.26470184, -207) (End -183.73529816, -207) (Layer Mechanical15) 
+Line (Width 6) (Start -183.73529816, -207) (End -305.5, -85.23529816) (Layer Mechanical15) 
+Line (Width 6) (Start -305.5, -85.23529816) (End -305.5, 85.23529816) (Layer Mechanical15) 
+Line (Width 6) (Start -305.5, 85.23529816) (End -183.73529816, 207) (Layer Mechanical15) 
+Polygon (PointCount 8) (Layer Mechanical15) 
+Point (-183.73529816, 207)
+Point (-13.26470184, 207)
+Point (108.5, 85.23529816)
+Point (108.5, -85.23529816)
+Point (-13.26470184, -207)
+Point (-183.73529816, -207)
+Point (-305.5, -85.23529816)
+Point (-305.5, 85.23529816)
+EndPolygon
+Line (Width 6) (Start -355.5, 0) (End -305.5, 0) (Layer TopOverlay) 
+Line (Width 6) (Start -330.5, 25) (End -330.5, -25) (Layer TopOverlay) 
+Arc (Width 6) (Radius 202) (Location -98.5, 0) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Text (Location -98.5, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "PN")
+Text (Location -98.5, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "DEV")
+Text (Location -98.5, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "VAL")
+Text (Location -98.5, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "TOL")
+Arc (Width 0) (Radius 197) (Location -98.5, 0) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Text (Location -98.5, 0) (Height 50) (Width 3) (Rotation 0) (Layer Mechanical13) (Value "RefDes2")
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "UVZ1E102MPD") (PartCount 1) (DesPrefix "C?")
+Pin (Location 200, 0) (Rotation 0) (PinType Passive) (Length 100) (Width 0) (Designator Hidden "2") (Name Hidden "2") (PinSwap 1) (PartSwap 1) (PinSeq 2) (Part 1)
+Pin (Location 100, 0) (Rotation 180) (PinType Passive) (Length 100) (Width 0) (Designator Hidden "1") (Name Hidden "1") (PinSwap 1) (PartSwap 1) (PinSeq 1) (Part 1)
+Line (Width 8) (Start 137, -75) (End 137, 75) (Part 1)
+Line (Width 8) (Start 162, -75) (End 162, 75) (Part 1)
+Line (Width 8) (Start 162, 0) (End 200, 0) (Part 1)
+Line (Width 8) (Start 100, 0) (End 137, 0) (Part 1)
+Parameter (Name "Copyright") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Copyright (C) 2015 Accelerated Designs. All rights reserved") (Part 1)
+Parameter (Name "Manufacturer_Part_Number") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "UVZ1E102MPD") (Part 1)
+Parameter (Name "Vendor") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Vendor") (Part 1)
+Parameter (Name "Type") (Location 150, -300) (Height 137) (Rotation 0) (Justification Center) (Value "") (Part 1)
+Parameter (Name "Value") (Location 150, -150) (Height 137) (Rotation 0) (Justification Center) (Value "Value") (Part 1)
+Parameter (Name "RefDes") (Location 150, 150) (Height 137) (Rotation 0) (Justification Center) (Value "") (Part 1)
+Parameter (Name "C") (Location 0, 0) (Height 1) (Rotation 0) (Justification Center) (Value "Copyright (C) 2015 Accelerated Designs. All rights reserved") (Part 1)
+Footprint (Name "U1-T")
+EndComponent
+EndComponents
